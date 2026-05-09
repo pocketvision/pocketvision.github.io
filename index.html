@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PocketVision</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0B0F1A;
+            color: white;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .logo-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #6D5EF7, #3DDCFF);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: bold;
+            box-shadow: 0 0 30px rgba(109, 94, 247, 0.35);
+        }
+
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            line-height: 1.1;
+            margin-bottom: 24px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            color: #B8C0D4;
+            max-width: 700px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 16px 32px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, #6D5EF7, #3DDCFF);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: 0.2s ease;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.92;
+        }
+
+        .features {
+            margin-top: 120px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 24px;
+            padding: 28px;
+            backdrop-filter: blur(10px);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 14px;
+            font-size: 20px;
+        }
+
+        .feature-card p {
+            color: #B8C0D4;
+        }
+
+        footer {
+            margin-top: 120px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            text-align: center;
+            color: #8C93A8;
+        }
+
+        footer a {
+            color: #B8C0D4;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .logo-text {
+                font-size: 20px;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+
+        <div class="logo">
+            <div class="logo-icon">
+                PV
+            </div>
+
+            <div class="logo-text">
+                PocketVision
+            </div>
+        </div>
+
+    </header>
+
+    <section class="hero">
+
+        <h1>
+            Local AI.<br>
+            Private by Design.
+        </h1>
+
+        <p>
+            PocketVision is an on-device AI media app focused on privacy,
+            speed, and offline intelligence.
+            Your photos and videos stay on your device.
+        </p >
+
+        <a href=" " class="download-btn">
+            Download on App Store
+        </a >
+
+    </section>
+
+    <section class="features">
+
+        <div class="feature-card">
+            <h3>On-Device AI</h3>
+
+            <p>
+                AI processing runs locally on your device whenever possible.
+            </p >
+        </div>
+
+        <div class="feature-card">
+            <h3>Privacy First</h3>
+
+            <p>
+                Your photos and videos are not uploaded to external servers.
+            </p >
+        </div>
+
+        <div class="feature-card">
+            <h3>Fast Processing</h3>
+
+            <p>
+                Optimized lightweight AI models designed for mobile devices.
+            </p >
+        </div>
+
+    </section>
+
+    <footer>
+
+        <p>
+            © 2026 PocketVision
+        </p >
+
+        <br>
+
+        <a href="privacy.html">
+            Privacy Policy
+        </a >
+
+        <a href="terms.html">
+            Terms of Use
+        </a >
+
+    </footer>
+
+</div>
+
+</body>
+</html>
